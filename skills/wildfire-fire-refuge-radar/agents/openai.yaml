@@ -1,4 +1,4 @@
 interface:
   display_name: "Wildfire Fire Refuge Radar"
-  short_description: "Track and synthesize wildfire and fire refuge research frontiers."
-  default_prompt: "Track recent wildfire, fire refuge, fire refugia, remote sensing, AI/GIS, evacuation, and WUI risk papers, datasets, projects, and policy sources; summarize frontier trends and propose research ideas."
+  short_description: "Learn and track wildfire, fire refuge, and fire refugia knowledge frontiers."
+  default_prompt: "Explain, learn, and track wildfire, fire refuge, fire refugia, remote sensing, AI/GIS, evacuation, and WUI risk knowledge; build learning paths, screen papers and datasets, summarize trends, and propose project ideas."
