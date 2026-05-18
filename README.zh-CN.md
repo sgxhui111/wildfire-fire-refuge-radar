@@ -39,6 +39,9 @@ Wildfire 研究横跨很多领域：fire ecology、disaster risk reduction、eme
 - 论文、数据集、政策和 GitHub 项目筛选
 - fire refuge 与 fire refugia 概念辨析
 - wildfire remote sensing 与 AI/GIS 前沿追踪
+- 领域好论文的图表、caption 和表达模式提取
+- 图表、表格、图注和视觉证据链审查
+- wildfire 领域学术表达、段落逻辑和中英写作润色
 - Related work 对比表
 - 深度论文阅读笔记
 - 研究空白和项目 idea 生成
@@ -53,6 +56,7 @@ Wildfire 研究横跨很多领域：fire ecology、disaster risk reduction、eme
 | 文献入门 | fire micro-refugia 方向应该先读什么？ | 排序后的阅读队列和核心争论 |
 | 研究训练 | wildfire remote sensing 常用什么方法和数据集？ | 数据集/方法表和复现实验计划 |
 | Proposal 准备 | 哪些 gap 可以发展成研究项目？ | 研究问题、假设、方法和风险 |
+| 写作与图表 | 好论文如何组织图表、表格、caption 和 results 段落？ | Paper pattern card、figure contract、caption 模板、表达 moves |
 | 前沿追踪 | 本周 wildfire AI 或 fire refugia 研究有什么新变化？ | 带排序的 radar report |
 
 ## 研究范围
@@ -88,6 +92,16 @@ Wildfire 研究横跨很多领域：fire ecology、disaster risk reduction、eme
 | Graph and network models | 支持 evacuation、road vulnerability、infrastructure exposure 和 landscape connectivity |
 | Physics-informed AI | 融合 ML 与 fire behavior、weather、hydrology 或 evacuation models |
 | Uncertainty and robustness | 提升跨区域、跨季节、跨传感器和业务化应用的可靠性 |
+
+### 好论文模式与科研表达
+
+| 任务 | Skill 会提取什么 |
+| --- | --- |
+| 好论文阅读 | Central claim、evidence chain、figure/table roles、limitations、reusable structure |
+| 图表设计 | Core conclusion、panel logic、visual job、uncertainty display、caption contract |
+| 表格设计 | Dataset matrix、literature matrix、method comparison、policy comparison、research design matrix |
+| Caption 写作 | Main message、data/method、geography/time、panel guide、uncertainty or boundary |
+| 学术表达 | Abstract moves、introduction gap framing、related work grouping、results claim sentences、discussion boundaries |
 
 ## 评分标准
 
@@ -126,7 +140,15 @@ wildfire-fire-refuge-radar/
       ├─ agents/
       │  └─ openai.yaml
       └─ references/
-         └─ frontier-radar.md
+         ├─ academic-expression.md
+         ├─ concept-guardrails.md
+         ├─ figure-table-expression.md
+         ├─ frontier-radar.md
+         ├─ learning-workflows.md
+         ├─ paper-pattern-mining.md
+         ├─ quality-gates.md
+         ├─ research-design.md
+         └─ source-routing.md
 ```
 
 ## 示例 Prompt
@@ -149,6 +171,14 @@ wildfire-fire-refuge-radar/
 
 ```text
 基于 wildfire、fire refuge 和 fire refugia 文献，提出 5 个可执行的研究项目 idea，包括数据、方法和第一个实验。
+```
+
+```text
+用 wildfire-fire-refuge-radar 分析这篇 wildfire 论文的图表和表格，提取 claim-evidence 逻辑、caption 写法，以及我可以复用到自己研究里的表达模式。
+```
+
+```text
+帮我把这段 fire refugia results 和 figure caption 改成更清楚的高水平学术表达，不要编造 claim 或 citation。
 ```
 
 ## 典型输出格式
@@ -176,6 +206,22 @@ Top 3 深读
    - 证据:
    - 局限:
    - 可延展方向:
+
+Paper pattern card
+- Paper/source:
+- Main claim:
+- Strongest figure/table:
+- Why it works:
+- Reusable pattern:
+- Adaptation:
+- Caution:
+
+Figure/table contract
+- Core conclusion:
+- Evidence chain:
+- Visual job:
+- Caption move:
+- Risk check:
 
 学习或研究 idea
 1. Idea name

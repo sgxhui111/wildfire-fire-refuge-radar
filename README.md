@@ -39,6 +39,9 @@ This skill is designed to bridge that gap:
 - Paper, dataset, policy, and GitHub project screening
 - Fire refuge and fire refugia comparison
 - Wildfire remote sensing and AI/GIS frontier tracking
+- Good-paper pattern mining for wildfire and fire-refuge literature
+- Figure, table, caption, and visual evidence-chain auditing
+- Wildfire-specific academic expression and paragraph polishing
 - Related work table generation
 - Deep paper reading notes
 - Research gap and project idea generation
@@ -53,6 +56,7 @@ This skill is designed to bridge that gap:
 | Literature entry | What should I read first on fire micro-refugia? | Ranked reading queue and key debates |
 | Research training | What methods and datasets are used in wildfire remote sensing? | Dataset/method table and reproducibility plan |
 | Proposal development | What gaps can become a research project? | Research questions, hypotheses, methods, risks |
+| Writing and figures | How do strong papers structure their figures, tables, captions, and results paragraphs? | Paper pattern cards, figure contracts, caption templates, expression moves |
 | Frontier tracking | What changed this week in wildfire AI or fire refugia research? | Radar report with ranked candidates |
 
 ## Research Scope
@@ -88,6 +92,16 @@ This skill is designed to bridge that gap:
 | Graph and network models | Support evacuation, road vulnerability, infrastructure exposure, and landscape connectivity |
 | Physics-informed AI | Combine ML with fire behavior, weather, hydrology, or evacuation models |
 | Uncertainty and robustness | Improve cross-region, cross-season, cross-sensor, and operational reliability |
+
+### Paper Patterns and Scientific Expression
+
+| Task | What the Skill Extracts |
+| --- | --- |
+| Good-paper reading | Central claim, evidence chain, figure/table roles, limitations, reusable structure |
+| Figure design | Core conclusion, panel logic, visual job, uncertainty display, caption contract |
+| Table design | Dataset matrix, literature matrix, method comparison, policy comparison, research design matrix |
+| Caption writing | Main message, data/method, geography/time, panel guide, uncertainty or boundary |
+| Academic expression | Abstract moves, introduction gap framing, related work grouping, results claim sentences, discussion boundaries |
 
 ## Scoring Rubric
 
@@ -126,7 +140,15 @@ wildfire-fire-refuge-radar/
       ├─ agents/
       │  └─ openai.yaml
       └─ references/
-         └─ frontier-radar.md
+         ├─ academic-expression.md
+         ├─ concept-guardrails.md
+         ├─ figure-table-expression.md
+         ├─ frontier-radar.md
+         ├─ learning-workflows.md
+         ├─ paper-pattern-mining.md
+         ├─ quality-gates.md
+         ├─ research-design.md
+         └─ source-routing.md
 ```
 
 ## Example Prompts
@@ -149,6 +171,14 @@ Track this week's wildfire remote sensing and AI/GIS frontier, including papers,
 
 ```text
 Based on wildfire, fire refuge, and fire refugia literature, propose five feasible research project ideas with data, methods, and first experiments.
+```
+
+```text
+Use wildfire-fire-refuge-radar to analyze the figures and tables of this wildfire paper. Extract the claim-evidence logic, caption style, and reusable patterns for my own study.
+```
+
+```text
+Help me rewrite this fire refugia results paragraph and figure caption in a clearer high-impact academic style, without inventing claims or citations.
 ```
 
 ## Typical Output
@@ -176,6 +206,22 @@ Top 3 deep dives
    - Evidence:
    - Limitations:
    - Extension:
+
+Paper pattern card
+- Paper/source:
+- Main claim:
+- Strongest figure/table:
+- Why it works:
+- Reusable pattern:
+- Adaptation:
+- Caution:
+
+Figure/table contract
+- Core conclusion:
+- Evidence chain:
+- Visual job:
+- Caption move:
+- Risk check:
 
 Research or learning ideas
 1. Idea name

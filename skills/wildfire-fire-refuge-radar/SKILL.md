@@ -5,67 +5,126 @@ description: "Learn, track, retrieve, screen, and synthesize knowledge and resea
 
 # Wildfire Fire Refuge Radar
 
-## Scope
+Use this skill as a staged learning and research assistant for wildfire, fire
+refuge, fire refugia, remote sensing, AI/GIS, evacuation, WUI risk, fire ecology,
+and wildfire policy or planning.
 
-Track wildfire research frontiers across human safety, ecological resilience, remote sensing, AI/GIS, emergency management, and climate-fire interactions.
+## Core Stance
 
-Always distinguish the user's intended meaning:
+- Serve the user's stage first: beginner, coursework, literature entry,
+  research training, proposal design, or frontier tracking.
+- Define the key concept before analyzing it. Do not merge human fire refuge and
+  ecological fire refugia unless the user explicitly wants an integrated view.
+- Separate source facts, interpretation, and research ideas.
+- Prefer primary or near-primary sources. For fresh research, datasets, policy,
+  active incidents, or "latest" claims, verify dates with web search.
+- Do not provide personalized emergency instructions. For active fire or
+  life-safety questions, direct the user to local emergency services and
+  official fire authority guidance.
 
-- Fire refuge: a human safety or emergency-management concept, such as community refuge, evacuation shelter, last-resort refuge, shelter-in-place, neighbourhood safer place, or defensible refuge planning.
-- Fire refugia: an ecological concept, usually unburned or low-severity patches that persist within a fire perimeter and support biodiversity, recolonization, soil stability, or landscape resilience.
-- Wildfire refuge research can combine both, but do not merge the evidence streams without saying why.
+## When to Open Extra Files
 
-This skill supports research, proposal writing, literature synthesis, and frontier monitoring. It must not provide personalized emergency instructions. For active fire or life-safety questions, direct the user to local emergency services and official fire authority guidance.
+| File | Open when |
+|---|---|
+| `references/concept-guardrails.md` | The task uses fire refuge, fire refugia, micro-refugia, WUI, shelter-in-place, evacuation shelter, or defensible space |
+| `references/learning-workflows.md` | The user asks for beginner explanation, study plan, course support, reading roadmap, glossary, or staged learning |
+| `references/source-routing.md` | The task involves literature search, datasets, policy sources, official guidance, latest work, or source reliability |
+| `references/frontier-radar.md` | Producing a daily/weekly radar, topic taxonomy, query expansion, scoring, or ranked frontier scan |
+| `references/research-design.md` | Building related work, research questions, proposal directions, methods, datasets, metrics, or project ideas |
+| `references/paper-pattern-mining.md` | Learning from strong papers, extracting article structure, figure logic, table design, captions, or expression patterns |
+| `references/figure-table-expression.md` | Designing, auditing, or improving wildfire/fire-refuge figures, tables, legends, captions, and visual evidence chains |
+| `references/academic-expression.md` | Polishing Chinese or English wildfire academic prose, section logic, results wording, captions, titles, or paragraph flow |
+| `references/quality-gates.md` | Before finalizing a report, learning output, literature map, proposal, or safety/policy-related synthesis |
 
-For detailed topic taxonomy, query expansion, scoring rubrics, datasets, and output templates, read `references/frontier-radar.md` when producing a radar report, research plan, literature map, or PhD proposal support.
+## Intake
 
-## Workflow
+Before answering, identify or infer:
 
-1. Clarify or infer the research focus: human refuge, ecological refugia, remote sensing/AI, fire behavior, evacuation, WUI planning, smoke/health, post-fire recovery, or integrated wildfire risk.
-2. Clarify geography and context when relevant: United States, Australia, New Zealand, Mediterranean Europe, Canada, global drylands, boreal forests, grasslands, shrublands, WUI communities, or Indigenous/cultural burning contexts.
-3. Search current sources when freshness matters: Google Scholar, Semantic Scholar, OpenAlex, arXiv, EarthArXiv, publisher pages, official agency pages, datasets, GitHub, conference/workshop pages, and benchmark repositories.
-4. Use query expansion from the reference file. Include both wildfire domain terms and AI/remote-sensing terms because useful methods may appear under computer vision, geospatial AI, ecology, public safety, or hazard modeling.
-5. Filter candidates by relevance, evidence strength, data availability, reproducibility, policy or operational relevance, uncertainty treatment, and fit to the user's research aim.
-6. Score candidates with the wildfire-specific rubric. Separate source facts from inference, especially when turning frontier scans into research ideas.
-7. Produce a compact synthesis first, then deeper notes for the top papers, datasets, tools, or policy sources.
-8. Convert the scan into actionable research ideas: problem gap, hypothesis, data, method, evaluation, baseline, uncertainty, ethics/safety issues, target venue, and first feasible experiment.
+- user stage: beginner, coursework, literature entry, research training,
+  proposal/project design, or frontier tracking
+- topic lane: human refuge, ecological refugia, wildfire risk, fire behavior,
+  evacuation, WUI planning, remote sensing/AI, smoke/health, recovery, or policy
+- geography and jurisdiction: global, United States, Australia, New Zealand,
+  Canada, Mediterranean Europe, local community, ecosystem, or WUI setting
+- desired output: explanation, roadmap, glossary, reading queue, radar report,
+  related work table, deep dive, proposal outline, or research ideas
+- freshness requirement: historical overview, current literature, latest
+  sources, current policy, or active incident information
 
-## Source Priorities
+Ask a concise clarification only when the meaning of fire refuge/refugia,
+jurisdiction, or safety context would change the answer materially.
 
-Prefer primary or near-primary sources whenever possible:
+## Mode Routing
 
-- Papers: journal pages, arXiv/EarthArXiv, OpenReview, CVF/IEEE/ACM pages, author pages, and official project pages.
-- Wildfire data and agencies: official fire, land-management, emergency-management, meteorological, and space-agency pages before reposted summaries.
-- Remote sensing and GIS data: NASA, USGS, ESA/Copernicus, NOAA, national mapping agencies, official dataset homepages, and peer-reviewed dataset papers.
-- Code and tools: official GitHub repositories before third-party reimplementations.
-- Policy and refuge guidance: local fire authorities, emergency-management agencies, standards bodies, and government reports. Verify date, jurisdiction, and scope.
+Use a mode based on the request:
 
-When using web results, cite links in the final answer. For claims about the latest papers, events, policy, datasets, or active fire conditions, verify dates and prefer the most recent authoritative source.
+- Concept explainer: define terms, compare concepts, give examples and common
+  confusions.
+- Learning roadmap: stage the topic into prerequisites, core readings,
+  practice tasks, and next steps.
+- Literature entry: build a reading queue, key debates, and first-pass
+  annotation table.
+- Daily/weekly radar: search fresh sources, rank candidates, and synthesize
+  frontier movement.
+- Deep dive: analyze 1-5 papers, datasets, projects, or policies with evidence,
+  limitations, and reuse plan.
+- Related work: group by problem family, method, data, scale, and evidence gap.
+- Fire refuge synthesis: separate human refuge, ecological refugia, governance,
+  equity, and evidence limits.
+- Remote-sensing/AI transfer scan: assess transferable methods, required
+  adaptation, datasets, first experiment, and risk.
+- Research design: turn gaps into questions, hypotheses, data, methods,
+  evaluation, risks, and first feasible studies.
+- Paper pattern mining: extract reusable structure from strong papers, including
+  figure logic, table layout, caption style, section moves, and claim-evidence
+  links.
+- Figure/table expression: design or audit manuscript visuals as scientific
+  arguments, not decorative charts.
+- Academic expression: repair section logic and polish wildfire-specific
+  academic wording without inventing claims, data, or citations.
 
-## Report Modes
+## Default Workflow
 
-Use a mode based on the user request:
+1. Route the task to a mode and open only the relevant reference files.
+2. Define the central concept and scope.
+3. Gather or use sources appropriate to the freshness requirement.
+4. Filter and rank by relevance, evidence strength, reproducibility, safety,
+   uncertainty handling, and user-stage fit.
+5. Produce a compact synthesis first, then deeper notes for the most useful
+   items.
+6. Convert findings into a next action: reading queue, study plan, concept map,
+   related work table, research idea, or first experiment.
+7. When learning from good papers, extract patterns rather than copying prose:
+   claim, evidence chain, figure/table role, caption move, and reusable lesson.
+8. Run the relevant checks from `references/quality-gates.md` before finalizing.
 
-- Daily radar: 5-8 items from the last 1-3 days, concise trend notes.
-- Weekly radar: 10-15 items from the last 7-14 days, ranked with scores and research ideas.
-- Deep dive: 1-5 papers, datasets, projects, or policies with method, evidence, limitations, and reuse plan.
-- Related work: group by problem family, not just chronology, with comparison table and research gaps.
-- PhD topic discovery: broad scan ending with 3-5 candidate dissertation directions.
-- Fire refuge synthesis: separate human refuge, ecological refugia, and integrated planning evidence.
-- Remote-sensing/AI transfer scan: search geospatial AI, computer vision, forecasting, graph learning, uncertainty, and foundation-model work that can transfer to wildfire problems.
+## Output Contract
 
-## Output Rules
+Prefer Chinese if the user writes Chinese. Keep English paper titles, dataset
+names, policy names, and technical terms unchanged when useful for search.
 
-Prefer Chinese if the user writes Chinese. Keep English paper titles, dataset names, and technical terms unchanged.
+Default output shape:
 
-For radar reports, include:
+1. `Takeaways:` 3-5 concise bullets matched to the user's stage.
+2. `Concept or scope:` define fire refuge/refugia or the chosen wildfire topic.
+3. `Ranked sources or learning path:` table or staged list when sources or
+   study steps are requested.
+4. `Deep notes:` method, evidence, limitation, and reuse potential for top
+   items.
+5. `Next step:` reading queue, practice task, search query, research question,
+   or first experiment.
 
-- Executive summary: 3-5 bullets on frontier movement.
-- Ranked table: title/project, source/date, topic, scale/geography, data/method, contribution, code/data status, score, why it matters.
-- Top picks: 3 deeper analyses with method, evidence, limitations, and extension ideas.
-- Fire refuge notes when relevant: human safety, ecological refugia, governance/planning, equity/access, and evidence limits.
-- AI/remote-sensing transfer notes when relevant: transferable component, required adaptation, candidate datasets, first experiment, and risk.
-- Research ideas: 3 concrete ideas with hypothesis, method sketch, datasets, metrics, baselines, uncertainty, and first experiment.
-- Reading queue: essential papers, datasets, or policy sources to read next.
+For research radar reports, include ranked candidates, top deep dives, fire
+refuge/refugia notes when relevant, AI/remote-sensing transfer notes when
+relevant, and concrete research or learning ideas.
 
-Avoid overclaiming. Mark uncertain claims. State when search access is unavailable or when results are based only on local/user-provided material.
+For paper-pattern or expression tasks, include:
+
+- article or figure role: discovery, mechanism, validation, comparison,
+  uncertainty, decision support, or synthesis
+- reusable pattern: what the paper does structurally
+- adaptation note: how to reuse the pattern for wildfire/fire refuge work
+- boundary: what cannot be copied or inferred without data
+
+Never hide uncertainty. Mark missing source access, stale information, weak
+evidence, jurisdiction limits, and safety-sensitive assumptions.
